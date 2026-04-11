@@ -1,5 +1,7 @@
 import { Inter_Tight, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const interTight = Inter_Tight({
 	variable: "--font-inter",
@@ -24,7 +26,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${interTight.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
