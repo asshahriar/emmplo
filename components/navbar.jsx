@@ -17,7 +17,7 @@ export default function Navbar() {
 	return (
 		<nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
 			<div
-				className={`flex items-center gap-6 px-6 py-3 justify-between 
+				className={`flex items-center gap-6 px-3 py-3 justify-between 
         transition-all duration-500 ease-in-out will-change-transform
         
         ${

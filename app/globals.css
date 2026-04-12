@@ -141,7 +141,7 @@
 		@apply font-medium tracking-tighter;
 	}
 	p {
-		@apply text-body max-w-[60ch];
+		@apply text-body;
 	}
 
 	.heading-primary {
@@ -156,4 +156,14 @@
 		font-weight: 400;
 		@apply text-xl;
 	}
+}
+
+.section {
+  @apply w-full;
+  margin-top: clamp(3rem, 12vw, 12rem); /* 48px -> 96px */
+}
+
+.container {
+  @apply mx-auto w-full px-4 sm:px-6;
+  max-width: 1400px;
 }
