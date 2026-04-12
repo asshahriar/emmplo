@@ -2,6 +2,7 @@ import React from "react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import AnimatedLogoCloud from "./animatedlogocloud";
 
 export default function Hero() {
 	return (
@@ -14,9 +15,7 @@ export default function Hero() {
 				}}
 			/>
 			<div className="flex items-center justify-center flex-col text-center">
-				<Badge className="mb-4">
-					New Spring Update
-				</Badge>
+				<Badge className="mb-4">New Spring Update</Badge>
 				<h1 className="heading-primary max-w-[20ch] mb-2">
 					Your projects deserve to stand out
 				</h1>
@@ -35,6 +34,7 @@ export default function Hero() {
 					alt="hero dashboard image"
 				/>
 			</div>
+			<AnimatedLogoCloud />
 		</section>
 	);
 }

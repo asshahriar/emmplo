@@ -22,7 +22,7 @@ export default function Navbar() {
         
         ${
 					scrolled
-						? "w-[40vw] max-w-5xl bg-light/10 backdrop-blur-md"
+						? "w-[40vw] max-w-5xl bg-neutral-950 backdrop-blur-md"
 						: "w-screen max-w-screen-xl"
 				}`}
 			>

@@ -45,6 +45,8 @@
 	--radius-3xl: calc(var(--radius) * 2.2);
 	--radius-4xl: calc(var(--radius) * 2.6);
 
+	--animate-logo-cloud: logo-cloud 30s linear infinite;
+
 	--color-primary: #1447e6;
 	--color-dark: #000;
 	--color-light: #fff;
@@ -166,4 +168,20 @@
 .container {
   @apply mx-auto w-full px-4 sm:px-6;
   max-width: 1400px;
+}
+
+
+@layer utilities {
+  @keyframes logo-cloud {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 4rem));
+    }
+  }
+
+  .animate-logo-cloud {
+    animation: var(--animate-logo-cloud);
+  }
 }
