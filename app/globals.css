@@ -166,8 +166,7 @@
 }
 
 .container {
-  @apply mx-auto w-full px-4 sm:px-6;
-  max-width: 1400px;
+  @apply mx-auto max-w-6xl w-full px-4 sm:px-6;
 }
 
 
