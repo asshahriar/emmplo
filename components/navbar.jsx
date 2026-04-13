@@ -1,6 +1,26 @@
 "use client";
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
+
+const Links = [
+	{
+		hrefText: "About",
+		hrefLink: "#about"
+	},
+	{
+		hrefText: "Features",
+		hrefLink: "#features"
+	},
+	{
+		hrefText: "Reviews",
+		hrefLink: "#reviews"
+	},
+	{
+		hrefText: "Waitlist",
+		hrefLink: "#waitlist"
+	},
+]
 
 export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
@@ -29,10 +49,9 @@ export default function Navbar() {
 				<div className="font-heading text-lg">Logo</div>
 
 				<div className="hidden md:flex gap-6">
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Home</a>
-					<a href="#">About</a>
+					{Links.map((link) => (
+						<Link key={link.hrefText} href={link.hrefLink}>{link.hrefText}</Link>
+					))}
 				</div>
 
 				<Button size="lg">Get Started</Button>
