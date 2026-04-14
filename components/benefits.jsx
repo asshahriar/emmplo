@@ -18,13 +18,13 @@ const benefits = [
 		icon: <IoPeople size={34} color="#fff"/>,
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Performance insights",
 		description: "Easy-to-read metrics that help you understand results.",
 		icon: <IoPeople size={34} color="#fff"/>,
 	},
 	{
-		id: 1,
+		id: 3,
 		title: "Performance insights",
 		description: "Easy-to-read metrics that help you understand results.",
 		icon: <IoPeople size={34} color="#fff"/>,
