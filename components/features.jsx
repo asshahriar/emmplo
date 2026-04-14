@@ -1,6 +1,13 @@
 import React from "react";
 import { Badge } from "./ui/badge";
-import { div, h4 } from "framer-motion/client";
+import {
+	Card,
+	CardAction,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 
 const cards = [
 	{
@@ -31,12 +38,24 @@ export default function Features() {
 				Built for clarity, built for speed
 			</h1>
 
-			<div className="flex gap-2 mt-12">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
 				{cards.map((card) => (
-					<div key={card.cardId} className="bg-[#121212] p-3 space-y-2">
-						<h4>{card.title}</h4>
-						<p>{card.description}</p>
-					</div>
+					<Card size="" key={card.cardId} className="relative w-full pt-0 bg-[#121212]">
+						<div className="absolute inset-0 z-30 aspect-video" />
+
+						<img
+							src="/cardImg.png"
+							alt="Event cover"
+							className="relative z-20 aspect-video w-full object-cover"
+						/>
+
+						<CardHeader>
+							<CardTitle className="subtitle text-white">
+								{card.title}
+							</CardTitle>
+							<CardDescription>{card.description}</CardDescription>
+						</CardHeader>
+					</Card>
 				))}
 			</div>
 		</section>
