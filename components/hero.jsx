@@ -23,7 +23,7 @@ export default function Hero() {
 					Upload your files and let our platform transform them into polished,
 					professional results in seconds.
 				</p>
-				<Button size="lg">Watch Video</Button>
+				<Button>Watch Video</Button>
 			</div>
 			<div className="mt-12">
 				<Image
