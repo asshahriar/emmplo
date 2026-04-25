@@ -6,7 +6,7 @@ import AnimatedLogoCloud from "./animatedlogocloud";
 
 export default function Hero() {
 	return (
-		<section className="container mt-40 lg:mt-56">
+		<section id="about" className="container mt-40 lg:mt-56">
 			<div
 				className="absolute inset-0 -z-10"
 				style={{

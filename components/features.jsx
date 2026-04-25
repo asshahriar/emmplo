@@ -32,7 +32,7 @@ const cards = [
 
 export default function Features() {
 	return (
-		<section className="container section">
+		<section id="features" className="container section">
 			<Badge>Features</Badge>
 			<h1 className="heading-secondary mt-4">
 				Built for clarity, built for speed

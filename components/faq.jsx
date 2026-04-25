@@ -4,7 +4,7 @@ import FAQItems from "./faqitems";
 
 export default function FAQ() {
 	return (
-		<section className="section container flex flex-col md:flex-row gap-2 justify-between">
+		<section id="faq" className="section container flex flex-col md:flex-row gap-2 justify-between">
 			<div>
 				<Badge>Frequently Asked Questions</Badge>
 				<h1 className="heading-secondary max-w-[20ch] mt-4">Everything you want to know</h1>

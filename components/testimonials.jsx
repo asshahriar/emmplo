@@ -53,7 +53,7 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<section className="section container">
+		<section id="reviews" className="section container">
 			<Badge>Testimonials</Badge>
 
 			<h1 className="heading-secondary mt-4">What our customers say</h1>

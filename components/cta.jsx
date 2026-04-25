@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function CTA() {
 	return (
-		<section className="relative section container">
+		<section id="waitlist" className="relative section container">
 			<div className="flex flex-col lg:flex-row lg:items-center justify-between px-6 py-8 lg:py-12 lg:px-9">
 				{/* Teal Glow Background */}
 				<div
